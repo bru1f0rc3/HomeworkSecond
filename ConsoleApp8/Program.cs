@@ -14,7 +14,7 @@ namespace ConsoleApp8
             const double E = 0.001;
             double A, S;
             int N;
-            Console.Write("Введите число:");
+            Console.Write("Введите X:");
             double x = double.Parse(Console.ReadLine());
             S = 0;
             N = 0;
