@@ -18,12 +18,12 @@ namespace ConsoleApp8
             double x = double.Parse(Console.ReadLine());
             S = 0;
             N = 0;
-            A = 1;
+            A = x;
             do
             {
-                A = A * 1 / ((2 * N + 2) * (2 * N + 1));
-                N = N + 1;
                 S = S + A;
+                N += 1;
+                A = A * 1 / ((2 * N + 2) * (2 * N + 1));
             }
             while (A >= E);
             Console.WriteLine($"Результат: {S:f2} Число итераций: {N}\n");
